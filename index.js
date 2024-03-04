@@ -11,7 +11,12 @@ let ltr = document.getElementById("ltr-con");
 let kilo = document.getElementById("kilo-con");
 
 convert.addEventListener("click", function () {
-    let mtrValue = ltrValue = kiloValue = 0;
+    let mtrValue = 0;
+    let feetValue = 0;
+    let ltrValue = 0;
+    let gallonValue = 0;
+    let poundValue = 0;
+    let kiloValue = 0;
     let number = inputNumber.value;
     mtrValue = (Number(number)*3.281).toFixed(3);
     feetValue = (Number(number)/3.281).toFixed(3);
